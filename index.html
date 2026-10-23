@@ -1,1 +1,92 @@
-
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HTML, SVG, CSS y JS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Iceland&display=swap" rel="stylesheet">
+        <style>
+        body{font-family: 'Iceland', Georgia, serif;</style>
+    </head>
+    <body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1005 600" onClick="alert('What?!')">
+  <style>
+    .grid  { fill: none; stroke: lightgray; }
+    .axis  { stroke: #000; }
+    .label { font-size: 12px; text-anchor: middle; dominant-baseline: middle; }
+    .tick  { font-size: 10px; text-anchor: end; dominant-baseline: middle; }
+    .area  { fill-opacity: .2; stroke-width: 1; transition: all ease .4s; }
+    .area:hover { fill-opacity: .5; transition: all ease .4s; }
+    .legend-text { font-size: 10px; }
+    .legend-title { font-size: 12px; font-weight: bold; }
+  </style>
+  <g transform="translate(305 315)">
+    <g class="grid">
+      <circle r="0"/>
+      <circle r="29"/>
+      <circle r="57"/>
+      <circle r="86"/>
+      <circle r="114"/>
+      <circle r="143"/>
+      <circle r="171"/>
+      <circle r="200"/>
+      <circle r="228"/>
+      <circle r="257"/>
+    </g>
+    <g class="axis">
+      <line x2="0.0" y2="-285.0"/>
+      <line x2="271.1" y2="-88.1"/>
+      <line x2="167.5" y2="230.6"/>
+      <line x2="-167.5" y2="230.6"/>
+      <line x2="-271.1" y2="-88.1"/>
+    </g>
+    <g>
+      <text class="label" x="0.0" y="-309.0">Staff with PhD</text>
+      <text class="label" x="293.9" y="-95.5">Faculty Student</text>
+      <text class="label" x="181.6" y="250.0">International Research Network</text>
+      <text class="label" x="-181.6" y="250.0">Papers Per Faculty</text>
+      <text class="label" x="-293.9" y="-95.5">Citations per Paper</text>
+    </g>
+    <g class="tick">
+      <path class="axis" fill="none" d="M-6-285H0V0H-6"/>
+      <text x="-9" y="0">0</text>
+      <text x="-9" y="-29">10</text>
+      <text x="-9" y="-57">20</text>
+      <text x="-9" y="-86">30</text>
+      <text x="-9" y="-114">40</text>
+      <text x="-9" y="-143">50</text>
+      <text x="-9" y="-172">60</text>
+      <text x="-9" y="-200">70</text>
+      <text x="-9" y="-229">80</text>
+      <text x="-9" y="-257">90</text>
+    </g>
+    <g fill="#ff0494" stroke="#ff0494">
+      <polygon class="area" points="0.0,-281.0 195.0,-63.3 166.9,229.8 -163.4,224.9 -210.2,-68.3"/>
+      <circle cx="0.0" cy="-281.0" r="0.75" stroke="none"/>
+      <circle cx="195.0" cy="-63.3" r="0.75" stroke="none"/>
+      <circle cx="166.9" cy="229.8" r="0.75" stroke="none"/>
+      <circle cx="-163.4" cy="224.9" r="0.75" stroke="none"/>
+      <circle cx="-210.2" cy="-68.3" r="0.75" stroke="none"/>
+    </g>
+    <g fill="#0363d0" stroke="#0363d0">
+      <polygon class="area" points="0.0,-205.0 62.8,-20.4 166.9,229.8 -166.9,229.8 -208.3,-67.7"/>
+      <circle cx="0.0" cy="-205.0" r="0.75" stroke="none"/>
+      <circle cx="62.8" cy="-20.4" r="0.75" stroke="none"/>
+      <circle cx="166.9" cy="229.8" r="0.75" stroke="none"/>
+      <circle cx="-166.9" cy="229.8" r="0.75" stroke="none"/>
+      <circle cx="-208.3" cy="-67.7" r="0.75" stroke="none"/>
+    </g>
+    <g fill="#4bb94b" stroke="#4bb94b">
+      <polygon class="area" points="0.0,-182.0 101.8,-33.1 165.8,228.1 -149.9,206.3 -238.7,-77.6"/>
+      <circle cx="0.0" cy="-182.0" r="0.75" stroke="none"/>
+      <circle cx="101.8" cy="-33.1" r="0.75" stroke="none"/>
+      <circle cx="165.8" cy="228.1" r="0.75" stroke="none"/>
+      <circle cx="-149.9" cy="206.3" r="0.75" stroke="none"/>
+      <circle cx="-238.7" cy="-77.6" r="0.75" stroke="none"/>
+    </g>
+    <g fill="#d62728" stroke="#d62728">
+      <polygon class="area" points="0.0,-84.0 80.8,-26.3 164.0,225.7 -135.8,186.9 -165.5,-53.8"/>
+      <circle cx="0.0" cy="-84.0" r="0.75" stroke="none"/>
+      <circle cx
